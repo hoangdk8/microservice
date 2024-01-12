@@ -9,11 +9,6 @@ import com.example.microservice.fragment.Fragment1
 import com.koai.base.ui.activity.BaseActivity
 
 class MainActivity : BaseActivity() {
-    private lateinit var binding: ActivityMainBinding
-    override fun onCreate(savedInstanceState: Bundle?) {
-        super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_main)
-    }
 
     override fun getBindingView(): ViewBinding {
         return ActivityMainBinding.inflate(layoutInflater)
