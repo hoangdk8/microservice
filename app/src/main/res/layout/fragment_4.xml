@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  ~ /**
+  ~  * Created by Admin on 12:32, 12/01/2024
+  ~  * Copyright (c) 2024 . All rights reserved.
+  ~  * Last modified 12:02, 12/01/2024
+  ~  */
+  -->
+
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".activity.MainActivity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:text="fragment 4"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:textSize="20sp"
+        />
+
+    <Button
+        android:id="@+id/button_fragment_1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="fragment 1"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/button_fragment_2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="fragment 2"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/button_fragment_3"
+        app:layout_constraintStart_toEndOf="@+id/button_fragment_1" />
+
+    <Button
+        android:id="@+id/button_fragment_3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="fragment 3"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>
